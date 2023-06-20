@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="#917551"
+        app:cardBackgroundColor="#B35A6C"
         >
         <LinearLayout
             android:layout_margin="12dp"
