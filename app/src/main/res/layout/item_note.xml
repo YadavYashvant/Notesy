@@ -20,6 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/notesTitle"
                 android:textSize="20sp"
                 android:maxLines="1"
                 android:textColor="@color/White"
@@ -32,6 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:id="@+id/notesSubtitle"
                 android:fontFamily="@font/geologica_auto_regular"
                 android:text="My name is yashvant yadav and i am an android developer who loves to make android apps and to contribute to open-source."
                 />
@@ -40,6 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="19sp"
+                android:id="@+id/notesDate"
                 android:textColor="@color/White"
                 android:maxLines="1"
                 android:fontFamily="@font/geologica_auto_regular"

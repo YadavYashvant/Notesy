@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.notesy.ui.Fragments.HomeFragment"
-        android:label="fragment_home"
+        android:label="Notesy"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_editNoteFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/createNoteFragment"
         android:name="com.example.notesy.ui.Fragments.CreateNoteFragment"
-        android:label="fragment_create_note"
+        android:label="Add new note"
         tools:layout="@layout/fragment_create_note" >
         <action
             android:id="@+id/action_createNoteFragment_to_homeFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/editNoteFragment"
         android:name="com.example.notesy.ui.Fragments.EditNoteFragment"
-        android:label="fragment_edit_note"
+        android:label="Edit note"
         tools:layout="@layout/fragment_edit_note" >
         <action
             android:id="@+id/action_editNoteFragment_to_homeFragment"
