@@ -3,12 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Fragments.CreateNoteFragment">
+    tools:context=".ui.Fragments.CreateNoteFragment"
+    android:background="@color/Bisque"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/geologica_auto_bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_contn"
+            />
+
+        <EditText
+            android:id="@+id/edtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subtitle"
+            android:maxLines="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/geologica_auto_regular"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_contn"
+            />
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Note"
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:fontFamily="@font/geologica_auto_regular"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_contn"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbtnsaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/LightCoral"
+        android:src="@drawable/baseline_check_24"
+        />
 </FrameLayout>
