@@ -10,4 +10,12 @@
     </style>
 
     <style name="Theme.Notesy" parent="Base.Theme.Notesy" />
+
+    <style name="BottomSheetStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Model</item>
+    </style>
+
+    <style name="Model" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
 </resources>

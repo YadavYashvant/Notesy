@@ -1,8 +1,11 @@
 package com.example.notesy.model
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "Notes")
 class Notes (
 
@@ -12,4 +15,4 @@ class Notes (
     var subtitle: String,
     var notes: String,
     var date: String
-    )
+    ):Parcelable

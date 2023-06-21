@@ -34,5 +34,8 @@
         <action
             android:id="@+id/action_editNoteFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.example.notesy.model.Notes" />
     </fragment>
 </navigation>

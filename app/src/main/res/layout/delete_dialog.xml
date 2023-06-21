@@ -2,10 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
 
     <TextView
         android:layout_width="match_parent"
+        android:textColor="@color/Black"
         android:layout_height="wrap_content"
         android:fontFamily="@font/geologica_auto_bold"
         android:gravity="center"
@@ -15,7 +17,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/Black"
         android:layout_marginTop="20dp"
+        android:id="@+id/dialog_yes"
         android:text="Yes"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -30,7 +34,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="@color/Black"
         android:text="No"
+        android:id="@+id/dialog_no"
         android:padding="10dp"
         android:background="@drawable/no_button"
         android:layout_marginStart="10dp"
@@ -38,6 +44,7 @@
         android:gravity="center"
         android:textSize="20sp"
         android:fontFamily="@font/geologica_auto_bold"
+        android:layout_marginBottom="20dp"
         />
 
 </LinearLayout>

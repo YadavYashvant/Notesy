@@ -4,7 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
 }
-apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: "androidx.navigation.safeargs"
 
 android {
     namespace 'com.example.notesy'

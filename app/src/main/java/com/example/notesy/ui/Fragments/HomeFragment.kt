@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.notesy.R
 import com.example.notesy.ViewModel.NotesViewModel
 import com.example.notesy.databinding.FragmentHomeBinding
@@ -26,7 +28,7 @@ class HomeFragment : Fragment() {
 
         viewModel.getNotes().observe(viewLifecycleOwner,{ notesList ->
 
-            binding.RvHome.layoutManager = GridLayoutManager(requireContext(),2);
+            binding.RvHome.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
             binding.RvHome.adapter = NotesAdapter(requireContext(),notesList)
         })
 
