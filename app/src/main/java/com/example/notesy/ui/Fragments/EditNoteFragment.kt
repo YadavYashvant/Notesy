@@ -40,7 +40,6 @@ class EditNoteFragment : Fragment() {
         binding.edtSubtitle.setText(oldNotes.data.subtitle)
         binding.edtNote.setText(oldNotes.data.notes)
         //binding.edtTitle.setText(notes.data.title)
-        
         binding.fbtnsaveNote.setOnClickListener { 
             updateNotes(it)
         }
