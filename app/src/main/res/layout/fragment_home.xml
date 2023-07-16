@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/Bisque"
+        android:background="#CDAAB1"
         >
 
         <androidx.recyclerview.widget.RecyclerView
@@ -25,7 +25,7 @@
             android:id="@+id/Homeaddlbtn"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            app:backgroundTint="#D1A32F"
+            app:backgroundTint="#30CFFF"
             android:src="@drawable/baseline_add_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

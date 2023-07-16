@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Fragments.CreateNoteFragment"
-    android:background="@color/Bisque"
+    android:background="#CDAAB1"
     >
 
     <LinearLayout
@@ -62,7 +62,7 @@
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="@color/LightCoral"
+        android:backgroundTint="#30CFFF"
         android:src="@drawable/baseline_check_24"
         />
 </FrameLayout>
