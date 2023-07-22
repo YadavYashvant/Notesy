@@ -31,8 +31,7 @@
             app:destination="@id/homeFragment" />
         <action
             android:id="@+id/action_createNoteFragment_pop_including_homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/editNoteFragment"
