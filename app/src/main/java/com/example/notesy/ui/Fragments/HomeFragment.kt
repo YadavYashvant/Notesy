@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.notesy.R
@@ -19,6 +18,7 @@ class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
     val viewModel: NotesViewModel by viewModels()
+    val colorList = listOf(R.color.Black,R.color.BlueViolet,R.color.Azure,R.color.Coral,R.color.CornflowerBlue)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         viewModel.getNotes().observe(viewLifecycleOwner,{ notesList ->
 
             binding.RvHome.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL);
-            binding.RvHome.adapter = NotesAdapter(requireContext(),notesList)
+            binding.RvHome.adapter = NotesAdapter(requireContext(),notesList,colorList)
         })
 
         binding.Homeaddlbtn.setOnClickListener {

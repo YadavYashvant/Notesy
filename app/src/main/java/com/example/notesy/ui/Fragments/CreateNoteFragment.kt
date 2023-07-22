@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.notesy.R
 import com.example.notesy.ViewModel.NotesViewModel
 import com.example.notesy.databinding.FragmentCreateNoteBinding
@@ -52,7 +53,8 @@ class CreateNoteFragment : Fragment() {
 
         Toast.makeText(requireContext(),"Note Created",Toast.LENGTH_SHORT).show()
 
-        Navigation.findNavController(it!!).navigate(R.id.action_createNoteFragment_to_homeFragment)
+        //Navigation.findNavController(it!!).navigate(R.id.action_createNoteFragment_to_homeFragment)
+        findNavController().popBackStack(R.id.homeFragment,true)
     }
 
 }
