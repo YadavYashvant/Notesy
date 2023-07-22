@@ -43,7 +43,6 @@ class EditNoteFragment : Fragment() {
         binding.fbtnsaveNote.setOnClickListener { 
             updateNotes(it)
         }
-
         return binding.root
     }
 
