@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/Black"
+        android:textColor="@color/White"
         android:layout_marginTop="20dp"
         android:id="@+id/dialog_yes"
         android:text="Yes"
