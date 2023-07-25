@@ -16,6 +16,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.AppBarConfiguration
 import com.example.notesy.R
 import com.example.notesy.ViewModel.NotesViewModel
 import com.example.notesy.databinding.FragmentEditNoteBinding
@@ -29,6 +30,8 @@ class EditNoteFragment : Fragment() {
     lateinit var binding: FragmentEditNoteBinding
     val viewModel : NotesViewModel by viewModels()
 
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,6 +43,8 @@ class EditNoteFragment : Fragment() {
         binding.edtSubtitle.setText(oldNotes.data.subtitle)
         binding.edtNote.setText(oldNotes.data.notes)
         //binding.edtTitle.setText(notes.data.title)
+
+
         binding.fbtnsaveNote.setOnClickListener { 
             updateNotes(it)
         }

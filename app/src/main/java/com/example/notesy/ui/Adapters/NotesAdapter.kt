@@ -9,7 +9,7 @@ import com.example.notesy.databinding.ItemNoteBinding
 import com.example.notesy.model.Notes
 import com.example.notesy.ui.Fragments.HomeFragmentDirections
 
-class NotesAdapter(val requireContext: Context, val notesList: List<Notes>, colorList: List<Int>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
+class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
 
     class notesViewHolder(val binding: ItemNoteBinding): RecyclerView.ViewHolder(binding.root)
 
