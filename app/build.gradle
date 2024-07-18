@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
 apply plugin: "androidx.navigation.safeargs"
 
@@ -48,9 +49,15 @@ dependencies{
 
     //Room Database
     implementation "androidx.room:room-runtime:2.3.0"
+    implementation 'androidx.test:monitor:1.7.1'
+    implementation 'androidx.test.ext:junit-ktx:1.2.1'
+    implementation 'com.google.firebase:firebase-auth:23.0.0'
     kapt "androidx.room:room-compiler:2.3.0"
     implementation "androidx.room:room-ktx:2.3.0"
     androidTestImplementation "androidx.room:room-testing:2.3.0"
+
+    implementation "com.google.android.gms:play-services-auth:21.2.0"
+
 
 
     // Lifecycle components
