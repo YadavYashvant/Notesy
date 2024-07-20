@@ -31,13 +31,14 @@ class CreateNoteFragment : Fragment() {
 
         binding.fbtnsaveNote.setOnClickListener {
             creatNotes(it)
+//            Navigation.findNavController(it!!).navigate(R.id.action_editNoteFragment_to_homeFragment)
+            findNavController().navigateUp()
         }
 
         return binding.root
     }
 
     private fun creatNotes(it: View?) {
-
         val title = binding.edtTitle.text.toString()
         val subtitle = binding.edtSubtitle.text.toString()
         val notes = binding.edtNote.text.toString()
@@ -45,16 +46,13 @@ class CreateNoteFragment : Fragment() {
         val d = Date()
         val notesDate: CharSequence = DateFormat.format("MMMM d, yyyy ", d.time)
 
-        val data = Notes(null, title = title,subtitle = subtitle,
+        val data = Notes(null, title = title, subtitle = subtitle,
             notes = notes,
             date = notesDate.toString()
-            )
+        )
         viewModel.addNotes(data)
 
         Toast.makeText(requireContext(),"Note Created",Toast.LENGTH_SHORT).show()
-
-        //Navigation.findNavController(it!!).navigate(R.id.action_createNoteFragment_to_homeFragment)
-        findNavController().popBackStack(R.id.homeFragment,true)
     }
 
 }

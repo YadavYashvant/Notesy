@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.Toast
 import com.example.notesy.databinding.ActivitySplashBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -24,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Configure Google Sign In
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestIdToken("64130373589-rbeobu1ggl9oobv4v0bhvn00rvlmqfvd.apps.googleusercontent.com")
             .requestEmail()
             .build()
         val googleSignInClient = GoogleSignIn.getClient(this, gso)
@@ -71,7 +72,7 @@ class SplashActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     navigateToMainActivity()
                 } else {
-                    // If sign in fails, display a message to the user.
+                    Toast.makeText(this, "Authentication Failed", Toast.LENGTH_SHORT).show()
                 }
             }
     }

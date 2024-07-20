@@ -19,15 +19,19 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/notesyl" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/signInButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
         android:text="Sign In with Google"
+
         android:textColor="#FFFFFF"
+        android:backgroundTint="#F4941F"
         android:textSize="18sp"
-        android:paddingHorizontal="32dp"
-        android:paddingVertical="48dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
